@@ -1,0 +1,21 @@
+.main-controls {
+  padding: 10px;
+}
+
+.main-video {
+  margin-top: 10px;
+}
+
+.play-bar {
+  fill: black;
+}
+
+.controls {
+  display: inline;
+}
+
+.play-bar {
+  color: black;
+  margin: 0px 180px;
+  border: solid 1px black
+}
