@@ -98,8 +98,6 @@ class VideoPlaylist extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>GeeksforGeeks</h1>
-				<h3>File Upload using React!</h3>
 				<div>
 					<input type="file" onChange={this.onFileChange} />
 					<button onClick={this.onFileUpload}>Upload!</button>
@@ -108,13 +106,14 @@ class VideoPlaylist extends React.Component {
 				<div>
 					<JPlaylist id={jPlayerOptions.id}>
 						<JPlayer>
+						<TransformWrapper lockAxisY={false}>
+							<TransformComponent>
 							<div className="main-video">
-								<TransformWrapper lockAxisY={false}>
-									<TransformComponent>
 										<Video />
+										</div>
 									</TransformComponent>
 								</TransformWrapper>
-							</div>
+
 							<Gui>
 								<div className="controls">
 									<span className="controls">
